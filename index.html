@@ -76,12 +76,34 @@
         opacity: 1;
       }
     }
+
+    .image-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body>
 
 <h1>🍫 Happy Chocolate Day, Snigdha! 🍫</h1>
 <p class="chocolate-message">Life is like chocolate, and I'm glad you are the sweetest part of mine! ❤</p>
+
+<!-- Image Section -->
+<div class="image-container">
+  <img src="snigdha.jpg" alt="Snigdha's Picture">
+  <img src="astitva.jpg" alt="Astitva's Picture">
+</div>
 
 <audio controls autoplay loop>
   <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
