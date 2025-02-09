@@ -1,107 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chocolate Day Special</title>
-    <style>
-        body {
-            background-image: url('https://i.imgur.com/4cHR0Uh.jpg'); /* Cute chocolate-themed background */
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            color: white;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            overflow: hidden;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .gallery img {
-            width: 220px;
-            height: 260px;
-            object-fit: cover;
-            border-radius: 15px;
-            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6);
-            transition: transform 0.3s ease-in-out;
-        }
-        .gallery img:hover {
-            transform: scale(1.1);
-        }
-        .upload {
-            margin-top: 20px;
-        }
-        .heart {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background-color: red;
-            transform: rotate(-45deg);
-            top: 50%;
-            left: 50%;
-            animation: float 5s infinite ease-in-out;
-        }
-        .heart:before,
-        .heart:after {
-            content: '';
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background-color: red;
-            border-radius: 50%;
-        }
-        .heart:before {
-            top: -25px;
-            left: 0;
-        }
-        .heart:after {
-            left: 25px;
-            top: 0;
-        }
-        @keyframes float {
-            0% { transform: translateY(0) rotate(-45deg); }
-            50% { transform: translateY(-20px) rotate(-45deg); }
-            100% { transform: translateY(0) rotate(-45deg); }
-        }
-        .message {
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-top: 30px;
-            animation: fadeIn 3s ease-in-out;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            border-radius: 10px;
-        }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Chocolate Day, Snigdha! 🍫</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #ffe6e6;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #703b09;
+    }
+    .chocolate-container {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      margin-top: 20px;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .chocolate-message {
+      background: #ffcc99;
+      padding: 10px 15px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #703b09;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    audio {
+      margin-top: 20px;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <h1>Happy Chocolate Day ❤️</h1>
-    <p>For my special one...</p>
-    
-    <div class="gallery">
-        <img src="your-image1.jpg" alt="Cute moment">
-        <img src="your-image3.jpg" alt="Lovely memory">
-        <img src="your-image2.jpg" alt="Happy times">
-    </div>
-    
-    <div class="upload">
-        <h2>Upload a Song</h2>
-        <input type="file" accept="audio/*">
-    </div>
-    
-    <div class="message">
-        <p>"You make my life sweeter than the finest chocolate. Every day with you is like unwrapping the best gift ever!" ❤️🍫</p>
-    </div>
-    
-    <div class="heart"></div>
+
+<h1>🍫 Happy Chocolate Day, Snigdha! 🍫</h1>
+
+<p class="chocolate-message">Life is like chocolate, and I'm glad you are the sweetest part of mine! ❤</p>
+
+<div class="chocolate-container">
+  <div class="image-wrapper">
+    <img src="snigdha.jpg" alt="Snigdha's Picture">
+  </div>
+  <div class="image-wrapper">
+    <img src="astitva.jpg" alt="Astitva's Picture">
+  </div>
+</div>
+
+<audio controls autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 </body>
 </html>
